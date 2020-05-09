@@ -241,7 +241,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 	vec3 camUp = vec3(0,1,0);
 	vec3 camOrg = vec3(0,-1.5,0);
 	
-	float fov = .8; // 크기
+	float fov = 1.; // 크기
 	vec3 axisZ = normalize(camOrg - rayOrg);
 	vec3 axisX = normalize(cross(camUp, axisZ));
 	vec3 axisY = normalize(cross(axisZ, axisX));
